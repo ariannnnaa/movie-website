@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #000;
+    color: white;
+}
+
+h1{
+    @apply text-3xl font-bold
+}
+
+h2{
+    @apply text-2xl font-semibold
+}
+
+h3{
+    @apply text-xl
+}
+
+.swiper-button-next::after,.swiper-button-prev::after{
+    color: rgb(255, 255, 255);
+}
+
+.swiper-button-next:hover::after,.swiper-button-prev:hover::after{
+    color:rgb(170, 170, 170);
+}
+.effect{
+    @apply transition-all ease-out duration-300
+}
+
+@media(min-width: 1024px){
+   h1{
+    @apply text-5xl
+   }
+
+    h2{
+        @apply text-4xl
+    }
+
+    h3{
+        @apply text-2xl
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+}
